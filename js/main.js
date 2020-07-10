@@ -1,8 +1,8 @@
+
 function consultaCep() {
-    const cep = document.getElementById('CEP').value;
-    const res = document.getElementById('Resultado');
-    const url = `https://viacep.com.br/ws/${cep}/json/`;
-    console.log(url);
+    const adress = document.getElementById('adress').value;
+    const res = document.getElementById('resultado');
+    const url = `https://viacep.com.br/ws/${adress}/json/`;
     $.ajax({
         url: url,
         type: 'GET',
@@ -12,3 +12,4 @@ function consultaCep() {
         },
     });
 }
+
