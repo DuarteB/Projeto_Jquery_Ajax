@@ -4,9 +4,7 @@
   "description": "Projeto do curso de Introdução ao Jquery e Ajax",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^4.5.0",
-    "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
+    "bootstrap": "^4.5.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -16,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/DuarteB/Projeto_Jquery_Ajax.git"
   },
-  "author": "",
+  "author": "Eduardo Duarte",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DuarteB/Projeto_Jquery_Ajax/issues"
