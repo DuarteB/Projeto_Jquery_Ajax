@@ -1,15 +1,13 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="sortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <!-- Bootstrap CSS -->
+    <link rel="sortcut icon" href="images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
-
-    <title>Projeto Ajax/Jquery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+    <title>VêrCEP</title>
   </head>
   <body class="">
 
@@ -35,22 +33,30 @@
           </div>
       </div>
     </nav>
-
-    <div class="container mt-5">
-      <div>
-            <input id="adress" class="" value="Entre com o Endereço ou CEP!" >
-      </div>
-      <div>
-          <button type="button" onclick="consultaCep()" class=" btn btn-dark bg-custom my-5">Consultar</button>
-          <p id="resultado"></p>
+    
+    <div class="container mt-5 ">
+      <div class="row">
+        <div class="col-12 col-sm-12 text-center mt-5">
+          <img src="images/img-title.png"><h1 class="h1 mb-5 ml-3 title">VêrCEP.com</h1>
+          <div class="align-middle">
+            <input id="adress" class="w-50 p-2" placeholder="Entre com o Endereço ou CEP!">
+            <button type="button" onclick="consultaCep()" class=" btn btn-dark bg-custom ml-3 pt-3">
+              <img src="images/search.png" class="search-icon">
+            </button>
+          </div>
+          <table class="container">
+            <tbody id="resultado">
+              
+            </tbody>
+          </table>
+          <i><p id="resultado" class="mt-5"></p></i>
+        </div>
       </div>
     </div>
 
-    <!-- Optional JavaScript -->
     <script type="text/JavaScript" src="js/main.js"></script>
     <script type="text/JavaScript" src="js/handleInput.js"></script>
     <script type="text/JavaScript" src="js/jquery.min.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>

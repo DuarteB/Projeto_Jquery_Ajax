@@ -8,8 +8,8 @@ function consultaCep() {
         type: 'GET',
         success: function(response) {
             const { logradouro, complemento, bairro, localidade, uf, cep} = response;
-            $(res).html(`${logradouro} ${complemento} - ${bairro}. ${localidade} - ${uf} .Cep: ${cep}`);
-        },
+            $(res).html(`<i><p class="mt-5">${logradouro} ${complemento} - ${bairro}. ${localidade} - ${uf} .Cep: ${cep}</p></i>`);
+        }
     });
 }
 
